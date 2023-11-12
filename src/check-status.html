@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <title>List of Rooms</title>
+</head>
+<body class="bg-[#F0F2F5]">
+    <header class="w-full h-20 bg-white flex flex-row justify-center items-center gap-4">
+        <img src="../public/navbar/logo.png" width="32" height="35"/>
+        <p class="font-bold text-[27px] font-inter">GeoReserve</p>
+    </header>
+    <main class="w-10/12 mx-auto flex flex-row mt-7 mb-24">
+        <section class="flex flex-col gap-2.5 w-1/5">
+            <div class="flex flex-row gap-2 items-center py-2 pl-4 group hover:bg-white hover:drop-shadow hover:rounded-lg">
+                <img src="../public/sidebar/home.png" width="20" height="20"/>
+                <p class="font-poppins text-[#28293D] font-medium text-xs group-hover:font-bold">Home</p>
+            </div>
+            <hr class="border-[#6E7198] h-[1px]"/>
+            <div class="flex flex-row gap-2 items-center py-2 pl-4 group hover:bg-white hover:drop-shadow hover:rounded-lg">
+                <img src="../public/sidebar/message.png" width="20" height="20"/>
+                <p class="font-poppins text-[#28293D] font-medium text-xs group-hover:font-bold">Geoletter</p>
+            </div>
+            <div class="flex flex-row gap-2 items-center py-2 pl-4 group hover:bg-white hover:drop-shadow hover:rounded-lg">
+                <img src="../public/sidebar/meeting-room.png" width="20" height="20"/>
+                <p class="font-poppins text-[#28293D] font-medium text-xs group-hover:font-bold">Reservations</p>
+            </div>
+            <div class="flex flex-row gap-2 items-center py-2 pl-4 group hover:bg-white hover:drop-shadow hover:rounded-lg">
+                <img src="../public/sidebar/tools.png" width="20" height="20"/>
+                <p class="font-poppins text-[#28293D] font-medium text-xs group-hover:font-bold">Facilities</p>
+            </div>
+            <hr class="border-[#6E7198] h-[1px]"/>
+            <div class="flex flex-row gap-2 items-center py-2 pl-4 bg-white drop-shadow rounded-lg">
+                <img src="../public/sidebar/notification.png" width="20" height="20"/>
+                <p class="font-poppins text-[#28293D] text-xs font-bold">Check Status</p>
+            </div>
+        </section>
+        <section class="ml-8 w-1/2 flex flex-col gap-5">
+            <div class="flex flex-col gap-2">
+                <h1 class="font-inter font-bold text-xl">CHECK STATUS</h1>
+                <h3 class="font-inter font-normal text-xs">Fill your ticket code to check the status!</h3>
+            </div>
+            <div class="w-full rounded-lg bg-white">
+                <div class="px-20 pt-5">
+                    <h1 class="font-inter font-bold text-xl text-center">STATUS EQUIPMENT RESERVE</h1>
+                    <hr class="border-[#6E7198] h-[1px] mt-3"/>
+                    <div class="mt-6 flex flex-row gap-9">
+                        <div class="flex flex-col gap-3">
+                            <p class="font-inter font-medium text-xs text-[#28293D]">Ticket Code</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">Full Name</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">NRP/ID Number</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">Category</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">Equipment</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">Amount</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">Start Datetime</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">Finish Datetime</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">Usage</p>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="font-inter font-bold text-xs text-[#28293D]">: FCT-RKWHSY</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">: Nur Muhammad Ainul Yaqin</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">: 5025201011</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">: Geofisika Student</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">: Digital Field Coal</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">: 2</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">: Thursday, 1 November 2023</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">: Friday, 2 November 2023</p>
+                            <p class="font-inter font-medium text-xs text-[#28293D]">: Practicum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-16 mt-8 mb-16">
+                    <table class="w-full drop-shadow-md">
+                        <tr class="bg-[#28293D]">
+                            <th class="font-inter font-medium text-xs text-white py-2 pl-3 text-left rounded-tl-[10px]">No</th>
+                            <th class="font-inter font-medium text-xs text-white py-2 pl-3 text-left">Step</th>
+                            <th class="font-inter font-medium text-xs text-white py-2 pl-3 text-left">Status</th>
+                            <th class="font-inter font-medium text-xs text-white py-2 pl-3 text-left rounded-tr-[10px]">Action</th>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">1</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">Make a proposal letter</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"><div class="bg-[#E6FFE3] text-[#0E8744] px-2 py-1 rounded-[5px] w-fit">Accepted</div></td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">2</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">Request is being processed</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"><div class="bg-[#E6FFE3] text-[#0E8744] px-2 py-1 rounded-[5px] w-fit">Accepted</div></td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">3</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">Payment</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"><div class="bg-[#E6FFE3] text-[#0E8744] px-2 py-1 rounded-[5px] w-fit">Accepted</div></td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">4</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">Payment is being processed</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"><div class="bg-[#E6FFE3] text-[#0E8744] px-2 py-1 rounded-[5px] w-fit">Accepted</div></td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">5</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">Reservation accepted</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"><div class="bg-[#E6FFE3] text-[#0E8744] px-2 py-1 rounded-[5px] w-fit">Accepted</div></td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">6</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">Reservation periods</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"><div class="bg-[#E6FFE3] text-[#0E8744] px-2 py-1 rounded-[5px] w-fit">Accepted</div></td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">7</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">End of periods</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"><div class="bg-[#E6FFE3] text-[#0E8744] px-2 py-1 rounded-[5px] w-fit">Done</div></td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">8</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">Finish Payment Settlement</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"><div class="bg-[#E6FFE3] text-[#0E8744] px-2 py-1 rounded-[5px] w-fit">Accepted</div></td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">9</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">Return equipment</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"><div class="bg-[#FEC166] text-white px-2 py-1 rounded-[5px] w-fit">Waiting</div></td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"></td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">10</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left">Payment Accepted</td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"><div class="bg-[#FEC166] text-white px-2 py-1 rounded-[5px] w-fit">Waiting</div></td>
+                            <td class="font-inter font-medium text-xs text-[#28293D] py-2 pl-3 text-left"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="ml-5 w-[30%] flex flex-col gap-5">
+            <div class="flex flex-col gap-2">
+                <h1 class="font-inter font-bold text-xl">To Do List</h1>
+                <h3 class="font-inter font-normal text-xs">Follow these steps to reserve room!</h3>
+            </div>
+            <div class="w-full rounded-lg bg-white">
+                <div class="py-3 px-8">
+                    <p class="font-inter font-normal text-[#28293D] text-xs line-through">Make a proposal</p>
+                </div>
+                <div class="py-3 px-8">
+                    <p class="font-inter font-normal text-[#28293D] text-xs line-through">Choose room and fill the form</p>
+                </div>
+                <div class="py-3 px-8">
+                    <p class="font-inter font-normal text-[#28293D] text-xs line-through">Check the status using ticket given</p>
+                </div>
+                <div class="py-3 px-8 bg-gradient-to-br from-[#F34E4E] to-[#FCA668] rounded-b-lg">
+                    <p class="font-inter font-bold text-white text-base">Do the intruction in the Check Status or email sent</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full bg-[#EE701E] py-10">
+        <div class="w-10/12 mx-auto flex flex-row justify-between items-center">
+            <div class="flex flex-col gap-1.5">
+                <div class="flex flex-row justify-start items-center gap-4">
+                    <img src="../public/footer/logo.png" width="60" height="64"/>
+                    <p class="font-bold text-[27px] font-inter text-white">GeoReserve</p>
+                </div>
+                <p class="font-inter font-medium text-white text-[16px]">&copy;2023 GeoReserve. All rights reserved.</p>
+            </div>
+            <div class="flex flex-row gap-6 h-fit">
+                <img src="../public/footer/facebook.png" width="24" height="24"/>
+                <img src="../public/footer/twitter.png" width="24" height="24"/>
+                <img src="../public/footer/youtube.png" width="24" height="24"/>
+                <img src="../public/footer/instagram.png" width="24" height="24"/>
+                <img src="../public/footer/linkedin.png" width="24" height="24"/>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

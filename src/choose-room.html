@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+    <title>List of Rooms</title>
+</head>
+<body class="bg-[#F0F2F5]">
+    <header class="w-full h-20 bg-white flex flex-row justify-center items-center gap-4">
+        <img src="../public/navbar/logo.png" width="32" height="35"/>
+        <p class="font-bold text-[27px] font-inter">GeoReserve</p>
+    </header>
+    <main class="w-10/12 mx-auto flex flex-row mt-7 mb-24">
+        <section class="flex flex-col gap-2.5 w-1/5">
+            <div class="flex flex-row gap-2 items-center py-2 pl-4 group hover:bg-white hover:drop-shadow hover:rounded-lg">
+                <img src="../public/sidebar/home.png" width="20" height="20"/>
+                <p class="font-poppins text-[#28293D] font-medium text-xs group-hover:font-bold">Home</p>
+            </div>
+            <hr class="border-[#6E7198] h-[1px]"/>
+            <div class="flex flex-row gap-2 items-center py-2  pl-4 group hover:bg-white hover:drop-shadow hover:rounded-lg">
+                <img src="../public/sidebar/message.png" width="20" height="20"/>
+                <p class="font-poppins text-[#28293D] font-medium text-xs group-hover:font-bold">Geoletter</p>
+            </div>
+            <div class="flex flex-row gap-2 items-center py-2  pl-4 bg-white drop-shadow rounded-lg">
+                <img src="../public/sidebar/meeting-room.png" width="20" height="20"/>
+                <p class="font-poppins text-[#28293D] text-xs font-bold">Reservations</p>
+            </div>
+            <div class="flex flex-row gap-2 items-center py-2  pl-4 group hover:bg-white hover:drop-shadow hover:rounded-lg">
+                <img src="../public/sidebar/tools.png" width="20" height="20"/>
+                <p class="font-poppins text-[#28293D] font-medium text-xs group-hover:font-bold">Facilities</p>
+            </div>
+            <hr class="border-[#6E7198] h-[1px]"/>
+            <div class="flex flex-row gap-2 items-center py-2  pl-4 group hover:bg-white hover:drop-shadow hover:rounded-lg">
+                <img src="../public/sidebar/notification.png" width="20" height="20"/>
+                <p class="font-poppins text-[#28293D] font-medium text-xs group-hover:font-bold">Check Status</p>
+            </div>
+        </section>
+        <section class="ml-8 w-1/2 flex flex-col gap-5">
+            <div class="flex flex-col gap-2">
+                <h1 class="font-inter font-bold text-xl">ROOM SCHEDULE</h1>
+                <h3 class="font-inter font-normal text-xs">Aula Hall Room</h3>
+            </div>
+            <div class="w-full rounded-lg bg-white">
+                <div class="p-4" id="calendar"></div>
+            </div>
+        </section>
+        <section class="ml-5 w-[30%] flex flex-col gap-9">
+            <div class="w-full flex flex-col gap-5">
+                <div class="flex flex-col gap-2">
+                    <h1 class="font-inter font-bold text-xl">To Do List</h1>
+                    <h3 class="font-inter font-normal text-xs">Follow these steps to reserve room!</h3>
+                </div>
+                <div class="w-full rounded-lg bg-white">
+                    <div class="py-3 px-8">
+                        <p class="font-inter font-normal text-[#28293D] text-xs line-through">Make a proposal</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-[#F34E4E] to-[#FCA668] py-3 px-8">
+                        <p class="font-inter font-bold text-white text-base">Choose room and fill the form</p>
+                    </div>
+                    <div class="py-3 px-8">
+                        <p class="font-inter font-normal text-[#28293D] text-xs">Check the status using ticket given</p>
+                    </div>
+                    <div class="py-3 px-8">
+                        <p class="font-inter font-normal text-[#28293D] text-xs">Do the intruction in the Check Status or email sent</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex flex-col gap-5">
+                <div class="flex flex-col gap-2">
+                    <h1 class="font-inter font-bold text-xl">BOOKING DATA</h1>
+                    <h3 class="font-inter font-normal text-xs">Fill in your information completely</h3>
+                </div>
+                <div class="w-full rounded-lg bg-white">
+                    <form class="p-6 flex flex-col gap-5">
+                        <div class="flex flex-col gap-2">
+                            <label for="full-name" class="font-inter font-medium text-xs text-[#172D39]">Full Name<span class="text-red-500">*</span></label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Nama Lengkap" class="border border-[#BCBCBC] rounded-[10px] py-2 px-3 placeholder:text-[#BCBCBC] placeholder:text-xs placeholder:font-medium placeholder:font-inter"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="identity-number" class="font-inter font-medium text-xs text-[#172D39]">Identity Number (<span class="font-bold">NRP</span>/KTP)<span class="text-red-500">*</span></label>
+                            <input type="text" id="identity-number" name="identity-number" placeholder="Identity Number" class="border border-[#BCBCBC] rounded-[10px] py-2 px-3 placeholder:text-[#BCBCBC] placeholder:text-xs placeholder:font-medium placeholder:font-inter"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="identity-number" class="font-inter font-medium text-xs text-[#172D39]">Identity Number (<span class="font-bold">NRP</span>/KTP)<span class="text-red-500">*</span></label>
+                            <input type="text" id="identity-number" name="identity-number" placeholder="Identity Number" class="border border-[#BCBCBC] rounded-[10px] py-2 px-3 placeholder:text-[#BCBCBC] placeholder:text-xs placeholder:font-medium placeholder:font-inter"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="upload-identity" class="font-inter font-medium text-xs text-[#172D39]">Upload Identity Card<span class="text-red-500">*</span></label>
+                            <input type="file" id="upload-identity" name="upload-identity"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="phone-number" class="font-inter font-medium text-xs text-[#172D39]">Phone Number</label>
+                            <input type="text" id="phone-number" name="phone-number" placeholder="Phone Number" class="border border-[#BCBCBC] rounded-[10px] py-2 px-3 placeholder:text-[#BCBCBC] placeholder:text-xs placeholder:font-medium placeholder:font-inter"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="email" class="font-inter font-medium text-xs text-[#172D39]">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Email" class="border border-[#BCBCBC] rounded-[10px] py-2 px-3 placeholder:text-[#BCBCBC] placeholder:text-xs placeholder:font-medium placeholder:font-inter"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="start-datetime" class="font-inter font-medium text-xs text-[#172D39]">Start Datetime</label>
+                            <input type="text" id="start-datetime" name="start-datetime" placeholder="Datetime" class="border border-[#BCBCBC] rounded-[10px] py-2 px-3 placeholder:text-[#BCBCBC] placeholder:text-xs placeholder:font-medium placeholder:font-inter"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="end-datetime" class="font-inter font-medium text-xs text-[#172D39]">End Datetime</label>
+                            <input type="text" id="end-datetime" name="end-datetime" placeholder="Datetime" class="border border-[#BCBCBC] rounded-[10px] py-2 px-3 placeholder:text-[#BCBCBC] placeholder:text-xs placeholder:font-medium placeholder:font-inter"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="activity-name" class="font-inter font-medium text-xs text-[#172D39]">Activity Name</label>
+                            <input type="text" id="activity-name" name="activity-name" placeholder="Activity Name" class="border border-[#BCBCBC] rounded-[10px] py-2 px-3 placeholder:text-[#BCBCBC] placeholder:text-xs placeholder:font-medium placeholder:font-inter"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="activity-description" class="font-inter font-medium text-xs text-[#172D39]">Activity Decsription</label>
+                            <textarea type="text" id="activity-description" name="activity-description" placeholder="Decsription" class="border border-[#BCBCBC] rounded-[10px] py-2 px-3 placeholder:text-[#BCBCBC] placeholder:text-xs placeholder:font-medium placeholder:font-inter"></textarea>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="other-needs" class="font-inter font-medium text-xs text-[#172D39]">Other Needs</label>
+                            <input type="text" id="other-needs" name="other-needs" placeholder="Other Needs" class="border border-[#BCBCBC] rounded-[10px] py-2 px-3 placeholder:text-[#BCBCBC] placeholder:text-xs placeholder:font-medium placeholder:font-inter"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="document" class="font-inter font-medium text-xs text-[#172D39]">Document</label>
+                            <input type="file" id="document" name="document"/>
+                        </div>
+                        <button type="submit" class="bg-[#28293D] text-white font-inter font-bold text-xs py-2.5 rounded-[10px]">Next</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="w-full bg-[#EE701E] py-10">
+        <div class="w-10/12 mx-auto flex flex-row justify-between items-center">
+            <div class="flex flex-col gap-1.5">
+                <div class="flex flex-row justify-start items-center gap-4">
+                    <img src="../public/footer/logo.png" width="60" height="64"/>
+                    <p class="font-bold text-[27px] font-inter text-white">GeoReserve</p>
+                </div>
+                <p class="font-inter font-medium text-white text-[16px]">&copy;2023 GeoReserve. All rights reserved.</p>
+            </div>
+            <div class="flex flex-row gap-6 h-fit">
+                <img src="../public/footer/facebook.png" width="24" height="24"/>
+                <img src="../public/footer/twitter.png" width="24" height="24"/>
+                <img src="../public/footer/youtube.png" width="24" height="24"/>
+                <img src="../public/footer/instagram.png" width="24" height="24"/>
+                <img src="../public/footer/linkedin.png" width="24" height="24"/>
+            </div>
+        </div>
+    </footer>
+    <script src="/src/script.js"></script>
+</body>
+</html>
